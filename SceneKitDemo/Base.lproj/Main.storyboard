@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SceneKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fn2-uA-MOc">
+                                <rect key="frame" x="32" y="32" width="122" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.14531835400000001" blue="0.28589467619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="0oP-Oa-ykl"/>
+                                    <constraint firstAttribute="width" constant="122" id="Xx7-M9-cGa"/>
+                                </constraints>
+                                <state key="normal" title="Button X"/>
+                                <connections>
+                                    <action selector="startXButtonclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vB4-aT-RSj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggm-lB-DMp">
+                                <rect key="frame" x="225" y="32" width="122" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.14531835400000001" blue="0.28589467619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="gLR-zU-QGl"/>
+                                    <constraint firstAttribute="height" constant="43" id="ohs-8W-gUV"/>
+                                </constraints>
+                                <state key="normal" title="Button Y"/>
+                                <connections>
+                                    <action selector="startYButtonclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbL-Gp-Vxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-CO-0M0">
+                                <rect key="frame" x="126" y="542" width="122" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.14531835400000001" blue="0.28589467619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="VPk-2C-YVv"/>
+                                    <constraint firstAttribute="height" constant="43" id="fB4-S5-u1G"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYc-Fk-Ac5"/>
+                                </connections>
+                            </button>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7R-9a-iUg">
+                                <rect key="frame" x="7" y="220" width="365" height="260"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="EXo-qV-gBC"/>
+                                </constraints>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c7R-9a-iUg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="3Zu-fl-X4r"/>
+                            <constraint firstItem="Fn2-uA-MOc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="4Z5-1J-F7I"/>
+                            <constraint firstItem="Fn2-uA-MOc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="9tT-1N-Muw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggm-lB-DMp" secondAttribute="trailing" constant="28" id="BmS-rf-kuL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kV1-CO-0M0" secondAttribute="trailing" constant="127" id="Jql-gf-afx"/>
+                            <constraint firstItem="c7R-9a-iUg" firstAttribute="top" secondItem="Fn2-uA-MOc" secondAttribute="bottom" constant="145" id="KHT-1P-IlG"/>
+                            <constraint firstItem="ggm-lB-DMp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Tvx-P9-pej"/>
+                            <constraint firstItem="kV1-CO-0M0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="kFt-tB-6cE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7R-9a-iUg" secondAttribute="trailing" constant="3" id="qta-Vz-IGA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kV1-CO-0M0" secondAttribute="bottom" constant="82" id="rLl-yM-bMB"/>
+                            <constraint firstItem="ggm-lB-DMp" firstAttribute="leading" secondItem="Fn2-uA-MOc" secondAttribute="trailing" constant="71" id="ynQ-eS-Laq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnView1" destination="c7R-9a-iUg" id="ZrS-ES-Vp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
